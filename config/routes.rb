@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root 'ideas#index'
+  root 'accounts#index'
   resources :accounts
 end

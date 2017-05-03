@@ -4,9 +4,18 @@ class AccountsController < ApplicationController
 	end
 
 	def create
-		@account = Account.create(date: params [:account],title: params[:account][:title], amount: params[:account][:amount])
+		@account = Account.create(account_params)
 		 redirect_to root_path
 	end
+	
+	def edit
+  		@account = Account.find(params[:id])
+	end
+
+	def new
+		
+	end
+
 
 	private 
 
