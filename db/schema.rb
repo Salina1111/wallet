@@ -20,4 +20,12 @@ ActiveRecord::Schema.define(version: 20170503085515) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "simples", force: :cascade do |t|
+    t.date     "time"
+    t.string   "account"
+    t.integer  "amount"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end

@@ -2,6 +2,9 @@ class AccountsController < ApplicationController
 	
 	def index
 		@accounts = Account.all
+		@balance = Account.balance
+		@debt = Account.debt
+		@total = Account.total
 	end
 
 	def create
